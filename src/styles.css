@@ -1,0 +1,22 @@
+.cat-image {
+  max-width: 300px;
+  height: auto;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.fade-out {
+  animation: fadeOut 0.5s;
+  opacity: 0;
+}

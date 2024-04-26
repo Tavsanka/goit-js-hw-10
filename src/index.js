@@ -13,7 +13,12 @@ const displayLoader = () => {
 };
 
 const hideLoader = () => {
-  loader.classList.add('hidden');
+  loader.classList.add('fade-out');
+
+  setTimeout(() => {
+    loader.classList.add('hidden');
+    loader.classList.remove('fade-out');
+  }, 500);
 };
 
 const showError = message => {
